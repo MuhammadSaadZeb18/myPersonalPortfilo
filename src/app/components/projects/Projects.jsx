@@ -1,7 +1,12 @@
+"use client";
+import { useState } from "react";
 import { projectsData } from "../../data/ProjectsData";
 import ProjectBox from "./ProjectBox";
+import ProjectModal from "../modal/ProjectModal";
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
   return (
     <div className="Seccontainer flex flex-col gap-20">
       <div>
@@ -22,8 +27,15 @@ const Projects = () => {
           role={p.role}
           github={p.github}
           img={p.img}
+          onClick={() => setSelectedProject(p)} // 👈 modal trigger
         />
       ))}
+
+      {/* Modal */}
+      <ProjectModal
+        project={selectedProject}
+        onClose={() => setSelectedProject(null)}
+      />
     </div>
   );
 };

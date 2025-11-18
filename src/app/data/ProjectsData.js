@@ -1,6 +1,26 @@
 import nest from "../assets/nestmart.png";
 import revo from "../assets/revo.png";
-import portfilo from "../assets/portfilo.png";
+
+import img1 from "../assets/nestmart/i1.png";
+import img2 from "../assets/nestmart/i2.png";
+import img3 from "../assets/nestmart/i3.png";
+import img4 from "../assets/nestmart/i4.png";
+import img5 from "../assets/nestmart/i5.png";
+import img6 from "../assets/nestmart/i6.png";
+import img7 from "../assets/nestmart/i7.png";
+import img8 from "../assets/nestmart/i8.png";
+import img9 from "../assets/nestmart/i9.png";
+import img10 from "../assets/nestmart/i10.png";
+import img11 from "../assets/nestmart/i11.png";
+
+import img12 from "../assets/revo/i1.png";
+import img13 from "../assets/revo/i2.png";
+import img14 from "../assets/revo/i3.png";
+import img15 from "../assets/revo/i4.png";
+import img16 from "../assets/revo/i5.png";
+import img17 from "../assets/revo/i6.png";
+import img18 from "../assets/revo/i7.png";
+import img19 from "../assets/revo/i8.png";
 
 export const projectsData = [
   {
@@ -12,6 +32,20 @@ export const projectsData = [
     path: "https://foodtuck-edu123.web.app/", // replace with your link
     github: "https://github.com/saadzeb/nestmart",
     img: nest,
+    technologies: ["React", "Tailwind", "Context API"],
+    images: [
+      img1,
+      img2,
+      img3,
+      img4,
+      img5,
+      img6,
+      img7,
+      img8,
+      img9,
+      img10,
+      img11,
+    ],
   },
 
   {
@@ -23,16 +57,7 @@ export const projectsData = [
     path: "https://revo-293.netlify.app/", // replace with your link
     github: "https://github.com/saadzeb/revo-medical",
     img: revo,
-  },
-
-  {
-    title: "Modern Portfolio Website",
-    description:
-      "My own developer portfolio built with Next.js, Tailwind CSS, and Framer Motion. Focuses on fast performance, accessibility, animations, and clean UI components.",
-    year: "2025",
-    role: "Front-end Developer",
-    path: "https://saad-portfolio.vercel.app/", // replace with your link
-    github: "https://github.com/saadzeb/portfolio",
-    img: portfilo,
+    technologies: ["HTML", "CSS", "Tailwind", "JavaScript"],
+    images: [img12, img13, img14, img15, img16, img17, img18, img19],
   },
 ];

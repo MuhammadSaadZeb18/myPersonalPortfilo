@@ -7,7 +7,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <div className="Seccontainer flex flex-col md:flex-row items-center mb-10! mt-30! justify-center gap-16 md:gap-10 overflow-hidden ">
+    <div className="Seccontainer flex flex-col md:flex-row items-center mb-10! mt-40! justify-center gap-16 md:gap-10 overflow-hidden ">
       {/* LEFT SIDE */}
       <div className="w-full md:w-1/2 flex flex-col gap-6">
         <h1>Hi, I am Muhammad Saad Zeb.</h1>

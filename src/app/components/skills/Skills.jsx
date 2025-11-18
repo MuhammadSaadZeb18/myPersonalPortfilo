@@ -26,7 +26,7 @@ const Skills = () => {
 
         <ul className="flex flex-wrap gap-6 mt-10!">
           {data.map((i) => (
-            <li className="cursor-pointer group relative w-fit">
+            <li key={i} className="cursor-pointer group relative w-fit">
               <div className="py-2 px-6 w-fit relative">
                 <p className="text-white">{i}</p>
 
