@@ -12,8 +12,8 @@ const Hero = () => {
       <div className="w-full md:w-1/2 flex flex-col gap-6">
         <h1>Hi, I am Muhammad Saad Zeb.</h1>
         <p>
-          A Sydney based front-end developer passionate about building
-          accessible and user friendly websites.
+          A front-end developer passionate about building accessible and user
+          friendly websites.
         </p>
 
         <div className="flex gap-4 items-center">
@@ -38,7 +38,7 @@ const Hero = () => {
         <Image
           src={aut}
           alt="myImghere"
-          className="rounded-xl object-cover h-[400px] w-auto md:h-[500px]"
+          className="rounded-xl  sm:h-[500px] w-full object-contain sm:w-auto "
         />
       </div>
     </div>
