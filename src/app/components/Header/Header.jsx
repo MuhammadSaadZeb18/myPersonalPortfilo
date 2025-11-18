@@ -3,7 +3,7 @@ import React from "react";
 import { HiBars2 } from "react-icons/hi2";
 const Header = () => {
   return (
-    <header className="h-28 flex items-center justify-between container ">
+    <header className="h-28 flex items-center justify-between bg-zinc-950 fixed top-0 left-0 w-full px-10  z-50 ">
       <h4 className=" font-bold ">M SAAD ZEB</h4>
       <ul className="hidden sm:flex gap-8 items-center text-[1.6rem] font-semibold">
         <li className="group relative">
