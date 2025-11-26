@@ -93,3 +93,14 @@ body {
     @apply text-stone-400 font-lato font-normal text-[14px] sm:text-[16px];
   }
 }
+
+
+
+/* Hides scrollbar but keeps scrolling */
+.hide-scrollbar {
+  scrollbar-width: none;      /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;              /* Chrome/Safari */
+}
