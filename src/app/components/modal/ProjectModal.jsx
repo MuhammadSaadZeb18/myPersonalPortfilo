@@ -18,7 +18,7 @@ const ModalSlider = ({ images }) => {
     stopAutoSlide();
     intervalRef.current = setInterval(() => {
       setCurrent((prev) => (prev + 1) % length);
-    }, 2000);
+    }, 1500);
   };
 
   const stopAutoSlide = () => {
@@ -38,12 +38,12 @@ const ModalSlider = ({ images }) => {
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {images.map((img, index) => (
-          <div key={index} className="min-w-full h-[300px] relative">
+          <div key={index} className="min-w-full h-[400px] relative">
             <Image
               src={img}
               alt="project image"
               fill
-              className="object-contain"
+              className="object-contain h-full w-full"
             />
           </div>
         ))}

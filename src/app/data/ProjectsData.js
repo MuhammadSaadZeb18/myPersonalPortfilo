@@ -22,6 +22,11 @@ import img17 from "../assets/revo/i6.png";
 import img18 from "../assets/revo/i7.png";
 import img19 from "../assets/revo/i8.png";
 
+import r1 from "../assets/randomuser/i1.png";
+import r2 from "../assets/randomuser/i2.png";
+import r3 from "../assets/randomuser/i3.png";
+import r4 from "../assets/randomuser/i4.png";
+
 export const projectsData = [
   {
     title: "NestMart — E-Commerce Platform",
@@ -29,7 +34,7 @@ export const projectsData = [
       "A modern, fully responsive e-commerce web application built with React.js and Tailwind CSS. Features product search, category filtering, cart system, and a clean UI designed from scratch.",
     year: "2025",
     role: "Front-end Developer",
-    path: "https://foodtuck-edu123.web.app/", // replace with your link
+    path: "https://foodtuck-edu123.web.app/",
     github: "https://github.com/saadzeb/nestmart",
     img: nest,
     technologies: ["React", "Tailwind", "Context API"],
@@ -54,10 +59,22 @@ export const projectsData = [
       "A professional medical billing system I developed from a Figma design using HTML, CSS, JavaScript, and Tailwind CSS. Includes service pages, contact forms, specialties, and smooth UI transitions.",
     year: "2024",
     role: "Front-end Developer",
-    path: "https://revo-293.netlify.app/", // replace with your link
+    path: "https://revo-293.netlify.app/",
     github: "https://github.com/saadzeb/revo-medical",
     img: revo,
     technologies: ["HTML", "CSS", "Tailwind", "JavaScript"],
     images: [img12, img13, img14, img15, img16, img17, img18, img19],
+  },
+  {
+    title: "Random User Fetcher App",
+    description:
+      "A modern UI application that fetches users from the RandomUser API with pagination, filtering, loading shimmer, and dynamic query params. Built for scalability and improved performance.",
+    year: "2025",
+    role: "React Developer",
+    path: "https://random-user-explorer-delta.vercel.app/",
+    github: "https://github.com/saadzeb/random-user", // Put your repo
+    img: r1,
+    technologies: ["React", "Tailwind", "Context API", "API Fetching"],
+    images: [r1, r2, r3, r4],
   },
 ];

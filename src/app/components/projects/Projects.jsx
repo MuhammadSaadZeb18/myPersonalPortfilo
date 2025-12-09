@@ -27,7 +27,7 @@ const Projects = () => {
           role={p.role}
           github={p.github}
           img={p.img}
-          onClick={() => setSelectedProject(p)} // 👈 modal trigger
+          onClick={() => setSelectedProject(p)} 
         />
       ))}
 

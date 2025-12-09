@@ -4,7 +4,7 @@ import { HiBars2 } from "react-icons/hi2";
 
 const Header = () => {
   return (
-    <header className="fixed top-0   left-0 w-full bg-zinc-900 z-50">
+    <header className="fixed top-0   left-0 w-full bg-black border-b border-zinc-800 z-50">
       <div className="container h-28  flex items-center justify-between ">
         <h4 className="font-bold">M SAAD ZEB</h4>
 

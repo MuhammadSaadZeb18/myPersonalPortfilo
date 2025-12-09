@@ -5,11 +5,11 @@ import { BsGithub } from "react-icons/bs";
 import Image from "next/image";
 const ProjectBox = (props) => {
   return (
-    <div
-      onClick={props.onClick}
-      className="flex flex-col md2:flex-row gap-10 items-center justify-between"
-    >
-      <div className="w-full md2:w-[50%] rounded-2Sm  bg-zinc-800 py-20 px-10 flex items-center justify-center ">
+    <div className="flex flex-col md2:flex-row gap-10 items-center justify-between">
+      <div
+        onClick={props.onClick}
+        className="w-full md2:w-[50%] rounded-2Sm  bg-zinc-800 py-20 px-10 flex items-center justify-center "
+      >
         <Image src={props.img} />
       </div>
       <div className="w-full md2:w-[50%] flex flex-col gap-3">

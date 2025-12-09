@@ -1,9 +1,10 @@
 import React from "react";
-import CusLink from "../ui/Link";
+import Button from "../ui/Button";
+import { HiArrowDownOnSquare } from "react-icons/hi2";
 
 const About = () => {
   return (
-    <div className="Seccontainer mt-20! mb-10!  flex flex-col items-start md:flex-row  justify-between ">
+    <div className="Seccontainer mt-20! mb-10! flex flex-col items-start md:flex-row justify-between ">
       <div className="w-full md:w-[40%]">
         <h2>ABOUT ME</h2>
       </div>
@@ -19,7 +20,17 @@ const About = () => {
           development, I love playing cricket and exploring anything that sparks
           creativity
         </p>
-        <CusLink path="/about">More About Me</CusLink>
+
+        {/* DOWNLOAD RESUME */}
+        <a href="/res.pdf" download>
+          <Button
+            icon={
+              <HiArrowDownOnSquare className="text-white font-bold" size={16} />
+            }
+          >
+            Download Resume
+          </Button>
+        </a>
       </div>
     </div>
   );
