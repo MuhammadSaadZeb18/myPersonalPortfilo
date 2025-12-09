@@ -28,7 +28,7 @@ const Footer = () => {
       </div>
       <form className="w-full md:w-[60%] flex flex-col gap-2">
         <label className="mt-[2rem]" htmlFor="username">
-          Name
+          <p>Name</p>
         </label>
         <input
           type="text"
@@ -39,7 +39,7 @@ const Footer = () => {
         />
 
         <label className="mt-[2rem]" htmlFor="email">
-          Email
+          <p>Email</p>
         </label>
         <input
           type="email"
@@ -50,7 +50,7 @@ const Footer = () => {
         />
 
         <label className="mt-[2rem]" htmlFor="subject">
-          Subject
+          <p>Subject</p>
         </label>
         <input
           type="text"
