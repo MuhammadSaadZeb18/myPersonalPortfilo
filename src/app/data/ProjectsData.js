@@ -27,6 +27,16 @@ import r2 from "../assets/randomuser/i2.png";
 import r3 from "../assets/randomuser/i3.png";
 import r4 from "../assets/randomuser/i4.png";
 
+import f1 from "../assets/foodtuck/f1.png";
+import f2 from "../assets/foodtuck/f2.png";
+import f3 from "../assets/foodtuck/f3.png";
+import f4 from "../assets/foodtuck/f4.png";
+import f5 from "../assets/foodtuck/f5.png";
+import f6 from "../assets/foodtuck/f6.png";
+import f7 from "../assets/foodtuck/f7.png";
+import f8 from "../assets/foodtuck/f8.png";
+import f9 from "../assets/foodtuck/f9.png";
+
 export const projectsData = [
   {
     title: "NestMart — E-Commerce Platform",
@@ -76,5 +86,17 @@ export const projectsData = [
     img: r1,
     technologies: ["React", "Tailwind", "Context API", "API Fetching"],
     images: [r1, r2, r3, r4],
+  },
+  {
+    title: "Food-Tuck  — E-Commerce Platform",
+    description:
+      "A modern, fully responsive e-commerce web application built with React.js and Tailwind CSS. Features product search, category filtering, cart system, and a clean UI designed from scratch.",
+    year: "2025",
+    role: "React Developer",
+    path: "https://foodtuck-edu123.web.app/",
+    github: "https://github.com/saadzeb/random-user",
+    img: f1,
+    technologies: ["React", "Tailwind", "Context API", "API Fetching"],
+    images: [f1, f2, f3, f4, f5, f6, f7, f8, f9],
   },
 ];

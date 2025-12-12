@@ -3,7 +3,10 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Button from "../ui/Button";
 const Footer = () => {
   return (
-    <footer className="Seccontainer mt-20! mb-10!  flex flex-col items-start md:flex-row  justify-between">
+    <footer
+      id="contact"
+      className="Seccontainer scroll-mt-28 mt-20! mb-10!  flex flex-col items-start md:flex-row  justify-between"
+    >
       <div className="flex flex-col gap-6 w-full md:w-[40%]">
         <h2>LET'S CONNECT</h2>
         <p>
@@ -12,7 +15,10 @@ const Footer = () => {
         </p>
 
         <ul className="flex gap-5 items-center">
-          <li>
+          {/* <li>
+            <BsGithub size={30} className="text-yellow-200" />
+          </li> */}
+          {/* <li>
             <BsGithub size={30} className="text-yellow-200" />
           </li>
           <li>
@@ -20,10 +26,7 @@ const Footer = () => {
           </li>
           <li>
             <BsGithub size={30} className="text-yellow-200" />
-          </li>
-          <li>
-            <BsGithub size={30} className="text-yellow-200" />
-          </li>
+          </li> */}
         </ul>
       </div>
       <form className="w-full md:w-[60%] flex flex-col gap-2">

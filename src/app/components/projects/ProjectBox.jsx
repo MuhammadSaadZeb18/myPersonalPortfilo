@@ -33,9 +33,9 @@ const ProjectBox = (props) => {
           <CusLink icon={<HiArrowUpRight />} path={props.path}>
             LIVE DEMO
           </CusLink>
-          <CusLink icon={<BsGithub />} path={"/"}>
+          {/* <CusLink icon={<BsGithub />} path={"/"}>
             SEE ON GITHUB
-          </CusLink>
+          </CusLink> */}
         </div>
       </div>
     </div>

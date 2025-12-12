@@ -28,8 +28,8 @@ const ModalSlider = ({ images }) => {
   return (
     <div
       className="relative w-full overflow-hidden rounded-xl group"
-      onMouseEnter={stopAutoSlide}
-      onMouseLeave={startAutoSlide}
+      onMouseEnter={startAutoSlide}
+      // onMouseLeave={startAutoSlide}
     >
       <h6>SecreenShots of Project</h6>
 
@@ -130,12 +130,12 @@ const ProjectModal = ({ project, onClose }) => {
               <p className="text-black">Live Demo</p>
             </Link>
 
-            <Link
+            {/* <Link
               href={project.github}
               className="px-6 py-2 rounded-2Sm bg-yellow-200 text-black font-semibold"
             >
               <p className="text-black">Github</p>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

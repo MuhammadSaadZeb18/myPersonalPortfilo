@@ -8,7 +8,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <div className="Seccontainer flex flex-col gap-20">
+    <div id="work" className="Seccontainer scroll-mt-28 flex flex-col gap-20">
       <div>
         <h2>Featured Projects</h2>
         <p>
@@ -27,7 +27,7 @@ const Projects = () => {
           role={p.role}
           github={p.github}
           img={p.img}
-          onClick={() => setSelectedProject(p)} 
+          onClick={() => setSelectedProject(p)}
         />
       ))}
 

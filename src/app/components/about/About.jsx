@@ -4,7 +4,10 @@ import { HiArrowDownOnSquare } from "react-icons/hi2";
 
 const About = () => {
   return (
-    <div className="Seccontainer mt-20! mb-10! flex flex-col items-start md:flex-row justify-between ">
+    <div
+      id="about"
+      className="Seccontainer scroll-mt-28 mt-20! mb-10! flex flex-col items-start md:flex-row justify-between "
+    >
       <div className="w-full md:w-[40%]">
         <h2>ABOUT ME</h2>
       </div>

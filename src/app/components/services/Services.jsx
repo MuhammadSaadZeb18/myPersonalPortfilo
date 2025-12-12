@@ -2,7 +2,10 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="Seccontainer mt-20 mb-10 flex flex-col items-start md:flex-row justify-between">
+    <div
+      id="services"
+      className="Seccontainer scroll-mt-28 mt-20 mb-10 flex flex-col items-start md:flex-row justify-between"
+    >
       {/* LEFT SIDE */}
       <div className="w-full md:w-[40%]">
         <h2>SERVICES</h2>

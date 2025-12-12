@@ -10,19 +10,19 @@ const Header = () => {
 
         <ul className="hidden sm:flex gap-8 items-center text-[1.6rem] font-semibold">
           <li className="group relative">
-            <Link href="/">Work</Link>
+            <Link href="#work">Work</Link>
             <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-yellow-200 transition-all duration-300 group-hover:w-full"></span>
           </li>
           <li className="group relative">
-            <Link href="/">About</Link>
+            <Link href="#about">About</Link>
             <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-yellow-200 transition-all duration-300 group-hover:w-full"></span>
           </li>
           <li className="group relative">
-            <Link href="/">Services</Link>
+            <Link href="#services">Services</Link>
             <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-yellow-200 transition-all duration-300 group-hover:w-full"></span>
           </li>
           <li className="group relative">
-            <Link href="/">Contact</Link>
+            <Link href="#contact">Contact</Link>
             <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-yellow-200 transition-all duration-300 group-hover:w-full"></span>
           </li>
         </ul>
