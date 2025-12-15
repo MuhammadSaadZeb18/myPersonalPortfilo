@@ -4,6 +4,7 @@ import aut from "../../assets/aut2.jpg";
 import { HiArrowUpRight } from "react-icons/hi2";
 import Button from "../ui/Button";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { HiArrowDownOnSquare } from "react-icons/hi2";
 
 const Hero = () => {
   return (
@@ -17,11 +18,18 @@ const Hero = () => {
         </p>
 
         <div className="flex gap-4 items-center">
-          <Button
-            icon={<HiArrowUpRight className="text-white font-bold" size={16} />}
-          >
-            Contact Me
-          </Button>
+          <a href="/res.pdf" download>
+            <Button
+              icon={
+                <HiArrowDownOnSquare
+                  className="text-white font-bold"
+                  size={16}
+                />
+              }
+            >
+              Download Resume
+            </Button>
+          </a>
 
           <div className="rounded-full cursor-pointer flex items-center justify-center bg-zinc-800 h-16 w-16">
             <BsGithub size={20} className="text-yellow-200" />

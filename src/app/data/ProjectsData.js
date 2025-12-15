@@ -44,7 +44,7 @@ export const projectsData = [
       "A modern, fully responsive e-commerce web application built with React.js and Tailwind CSS. Features product search, category filtering, cart system, and a clean UI designed from scratch.",
     year: "2025",
     role: "Front-end Developer",
-    path: "https://foodtuck-edu123.web.app/",
+    path: "https://nest-mart-oesx.vercel.app/",
     github: "https://github.com/saadzeb/nestmart",
     img: nest,
     technologies: ["React", "Tailwind", "Context API"],
