@@ -1,50 +1,58 @@
 import React from "react";
+import { motion } from "framer-motion";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaBootstrap,
+  FaGitAlt,
+  FaGithub,
+} from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs, SiRedux } from "react-icons/si";
 
-const data = [
-  "HTML",
-  "CSS",
-  "JAVASCRIPT",
-  "REACTJS",
-  "TAILWAND CSS",
-  "BOOTSTRAP",
-  "GIT",
-  "GITHUB",
+const skills = [
+  { name: "HTML", icon: <FaHtml5 /> },
+  { name: "CSS", icon: <FaCss3Alt /> },
+  { name: "JavaScript", icon: <FaJs /> },
+  { name: "React", icon: <FaReact /> },
+  { name: "Next.js", icon: <SiNextdotjs /> },
+  { name: "Tailwind", icon: <SiTailwindcss /> },
+  { name: "Bootstrap", icon: <FaBootstrap /> },
+  { name: "Redux", icon: <SiRedux /> },
+
+  { name: "Git", icon: <FaGitAlt /> },
+  { name: "GitHub", icon: <FaGithub /> },
 ];
+
 const Skills = () => {
   return (
-    <div className="Seccontainer mt-20! mb-10!  flex flex-col items-start md:flex-row  justify-between ">
-      <div className="w-full md:w-[40%]">
-        <h2>SKILLS</h2>
-      </div>
-      <div className="w-full md:w-[60%] flex flex-col gap-6">
-        <p>
-          I’m constantly working to sharpen my skills and dive into new
-          technologies. I love experimenting, learning, and pushing myself to
-          build better, smarter, and more efficient digital experiences. Every
-          project is a chance to grow—and I’m always ready for the next one.
-        </p>
+    <div
+      id="skills"
+      className="Seccontainer mt-24 mb-16 scroll-mt-28 flex flex-col gap-16"
+    >
+      <h2 className="gradient ">SKILLS</h2>
 
-        <ul className="flex flex-wrap gap-6 mt-10!">
-          {data.map((i) => (
-            <li key={i} className="cursor-pointer group relative w-fit">
-              <div className="py-2 px-6 w-fit relative">
-                <p className="text-white">{i}</p>
-
-                {/* Top border */}
-                <span className="absolute left-0 top-0 h-px w-full bg-white group-hover:bg-yellow-200 transition-colors duration-300"></span>
-
-                {/* Bottom border */}
-                <span className="absolute left-0 bottom-0 h-px w-full bg-white group-hover:bg-yellow-200 transition-colors duration-300"></span>
-
-                {/* Left border (animated height) */}
-                <span className="absolute left-0 top-0 w-px h-0 bg-white group-hover:h-full group-hover:bg-yellow-200 transition-all duration-300"></span>
-
-                {/* Right border (animated height) */}
-                <span className="absolute right-0 bottom-0 w-px h-0 bg-white group-hover:h-full group-hover:bg-yellow-200 transition-all duration-300"></span>
-              </div>
-            </li>
-          ))}
-        </ul>
+      {/* Skills grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+        {skills.map((skill, i) => (
+          <motion.div
+            key={skill.name}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ delay: i * 0.08 }}
+            whileHover={{ y: -10 }}
+            className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-center gap-4 shadow-lg cursor-pointer"
+          >
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              className="text-5xl text-yellow-200"
+            >
+              {skill.icon}
+            </motion.div>
+            <p className="text-white tracking-wide">{skill.name}</p>
+          </motion.div>
+        ))}
       </div>
     </div>
   );

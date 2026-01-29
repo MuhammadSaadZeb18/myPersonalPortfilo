@@ -10,7 +10,7 @@ const ProjectBox = (props) => {
         onClick={props.onClick}
         className="w-full md2:w-[50%] rounded-2Sm  bg-zinc-800 py-20 px-10 flex items-center justify-center "
       >
-        <Image src={props.img} />
+        <Image src={props.img} alt="project" />
       </div>
       <div className="w-full md2:w-[50%] flex flex-col gap-3">
         <h5>{props.title}</h5>
