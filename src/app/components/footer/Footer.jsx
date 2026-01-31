@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
@@ -28,8 +27,8 @@ const Footer = () => {
         {/* Column 1: Intro + Resume */}
         <motion.div
           className="flex flex-col gap-6"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           <p className="text-gray-300">
@@ -80,8 +79,8 @@ const Footer = () => {
         {/* Column 3: Social Links */}
         <motion.div
           className="flex flex-col gap-4"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <h6 className="">Follow Me</h6>
@@ -96,14 +95,12 @@ const Footer = () => {
                 size={30}
               />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/muhammad-saad-zeb-951329381/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BsLinkedin
-                className="text-yellow-200 hover:scale-110 transition-all"
-                size={30}
-              />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
-              <BsTwitter
                 className="text-yellow-200 hover:scale-110 transition-all"
                 size={30}
               />

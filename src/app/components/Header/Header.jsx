@@ -22,12 +22,14 @@ const Header = () => {
       <div className="container h-28 flex items-center justify-between">
         {/* Logo */}
         <Link href={"/"}>
-          <h4 className="font-bold text-2xl md:text-3xl">M SAAD ZEB</h4>
+          <h4 className="font-bold text-2xl md:text-3xl gradient">
+            {"< SaadZeb />"}
+          </h4>
         </Link>
         {/* Desktop Nav */}
-        <ul className="hidden sm:flex gap-8 items-center text-[1.6rem] font-semibold">
+        <ul className="hidden sm:flex gap-8 items-center text-[1.6rem] font-semibold ">
           {navLinks.map((link) => (
-            <li key={link.name} className="group relative">
+            <li key={link.name} className="group relative ">
               <Link href={link.href}>{link.name}</Link>
               <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-yellow-200 transition-all duration-300 group-hover:w-full"></span>
             </li>
@@ -36,7 +38,7 @@ const Header = () => {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="sm:hidden text-white z-50"
+          className="sm:hidden text-white z-100 cursor-pointer"
           onClick={toggleMobileNav}
           aria-label="Toggle Menu"
         >

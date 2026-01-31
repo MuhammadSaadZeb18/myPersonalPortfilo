@@ -1,0 +1,226 @@
+{
+  "projectsData": [
+    {
+      "title": "NestMart — E-Commerce Platform",
+      "description": "A modern, fully responsive e-commerce web application built with React.js and Tailwind CSS. Features include product search, category filtering, a cart system, and a clean, user-friendly interface designed from scratch.",
+      "year": "2025",
+      "role": "Front-end Developer",
+      "path": "https://nest-mart-oesx.vercel.app/",
+      "github": "https://github.com/saadzeb/nestmart",
+      "img": "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803824/i1_dy1wqu.png",
+      "technologies": ["React", "Tailwind CSS", "Context API"],
+      "images": [
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803824/i1_dy1wqu.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803799/i3_mnvdiu.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803798/i2_o7ijkr.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803799/i4_rq6wdv.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803801/i5_wxbb4j.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803804/i6_zlgtkh.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803807/i7_h9vxlz.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803811/i8_elqaqp.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803807/i9_sz1fqp.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803809/i10_hlootq.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803809/i11_yhksvm.png"
+      ]
+    },
+    {
+      "title": "Revo Medical Billing Web App",
+      "description": "A professional medical billing web application developed from a Figma design using HTML, CSS, JavaScript, and Tailwind CSS. Includes service pages, contact forms, specialties, and smooth UI transitions.",
+      "year": "2024",
+      "role": "Front-end Developer",
+      "path": "https://revo-293.netlify.app/",
+      "github": "https://github.com/saadzeb/revo-medical",
+      "img": "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804196/i1_ho1awu.png",
+      "technologies": ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
+      "images": [
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804196/i1_ho1awu.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804192/i2_caetfl.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804194/i3_hxd9ki.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804195/i4_yna8os.png",
+
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804196/i6_pexs7s.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804198/i7_wsttzk.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804202/i8_qcyqjg.png"
+      ]
+    },
+    {
+      "title": "Random User Fetcher App",
+      "description": "A modern user interface application that fetches data from the RandomUser API with pagination, filtering, loading shimmer effects, and dynamic query parameters for better performance and scalability.",
+      "year": "2025",
+      "role": "React Developer",
+      "path": "https://random-user-explorer-delta.vercel.app/",
+      "github": "https://github.com/saadzeb/random-user",
+      "img": "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804103/i1_majg79.png",
+      "technologies": ["React", "Tailwind CSS", "Context API", "API Fetching"],
+      "images": [
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804103/i1_majg79.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804102/i3_eurppv.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804101/i2_ztvwds.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804113/i4_qvl6xl.png"
+      ]
+    },
+    {
+      "title": "Food-Tuck — E-Commerce Platform",
+      "description": "A fully responsive food e-commerce platform built with React.js and Tailwind CSS. Features include product browsing, category filters, cart functionality, and a smooth, modern user experience.",
+      "year": "2025",
+      "role": "React Developer",
+      "path": "https://foodtuck-edu123.web.app/",
+      "github": "https://github.com/saadzeb/foodtuck",
+      "img": "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803433/f1_x1teo4.png",
+      "technologies": ["React", "Tailwind CSS", "Context API", "API Fetching"],
+      "images": [
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803433/f1_x1teo4.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803443/f2_ya6mmw.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803434/f3_k1wpr9.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803436/f4_brqehs.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803439/f5_ovbj8l.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803444/f6_vfxe3h.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803441/f7_ttmdv5.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803448/f8_prqidp.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803445/f9_tmsdyh.png"
+      ]
+    },
+    {
+      "title": "Vetched Landing Page",
+      "description": "A fully responsive landing page built using HTML, CSS, and JavaScript. Designed with multiple sections, modern layout, and clean UI structure.",
+      "year": "2024",
+      "role": "HTML & CSS Developer",
+      "path": "https://vetched.vercel.app/",
+      "github": "https://github.com/saadzeb/vetched",
+      "img": "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804351/v1_fvxphq.png",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "images": [
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804351/v1_fvxphq.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804366/v2_dtadx1.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804353/v3_iwehfk.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804355/v4_kq64iv.png"
+      ]
+    },
+    {
+      "title": "Cara E-Commerce Website",
+      "description": "A responsive e-commerce website built with HTML, CSS, and JavaScript. Includes product sections, shopping layout, and modern landing page design.",
+      "year": "2024",
+      "role": "HTML & CSS Developer",
+      "path": "https://cara-e-commerce-delta.vercel.app/",
+      "github": "https://github.com/saadzeb/cara-ecommerce",
+      "img": "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803255/cr1_uj2lld.png",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "images": [
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803255/cr1_uj2lld.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803248/cr2_llnveu.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803249/cr3_p3nnge.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803249/cr5_nomxxu.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803268/cr6_wlcj7x.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803266/cr7_bwwlp5.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803267/cr8_kymswc.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803267/cr9_mgniym.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803270/cr10_cvqrwj.png"
+      ]
+    },
+    {
+      "title": "Oxford University Website",
+      "description": "A responsive university website built using HTML, CSS, and JavaScript. Features multiple informational sections with a clean and professional layout.",
+      "year": "2024",
+      "role": "HTML & CSS Developer",
+      "path": "https://exford-uni-website.vercel.app/",
+      "github": "https://github.com/saadzeb/oxford-clone",
+      "img": "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804003/ox1_cmro3h.png",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "images": [
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804003/ox1_cmro3h.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804004/ox2_lzlzcg.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803996/ox3_cqqycd.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803998/ox4_azy3sm.png"
+      ]
+    },
+    {
+      "title": "Yelp-Style Business Discovery Platform",
+      "description": "A modern business discovery platform built with React.js and Tailwind CSS. Includes advanced filtering with URL-synced queries, API-based data fetching, infinite scroll pagination, and individual business detail pages.",
+      "year": "2025",
+      "role": "React Developer",
+      "path": "https://yelp-style-business-discovery-platf.vercel.app/",
+      "github": "https://github.com/saadzeb/yelp-clone",
+      "img": "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804382/y1_jesshu.png",
+      "technologies": ["React", "Tailwind CSS", "Zustand"],
+      "images": [
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804382/y1_jesshu.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804377/y2_jsdg1h.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804378/y3_wcdcuv.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769804374/y4_na6mat.png"
+      ]
+    },
+    {
+      "title": "Modern Portfolio Website",
+      "description": "A modern and fully responsive portfolio website for a client, featuring rich animations and smooth transitions using Framer Motion.",
+      "year": "2025",
+      "role": "React Developer",
+      "path": "https://adan-ktk-portfilo.vercel.app/",
+      "github": "https://github.com/saadzeb/portfolio-client",
+      "img": "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769802872/ad1_o5s7n1.png",
+      "technologies": ["React", "Tailwind CSS", "Framer Motion"],
+      "images": [
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769802872/ad1_o5s7n1.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769802872/ad2_pf91lu.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769802869/ad3_hsf1sg.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769802869/ad4_iikghk.png"
+      ]
+    },
+    {
+      "title": "AK Poultry Consultant",
+      "description": "A professional business website built with React.js and Tailwind CSS. Includes multiple responsive sections to showcase services, company profile, and contact information.",
+      "year": "2026",
+      "role": "React Developer",
+      "path": "https://ak-poultry.vercel.app/",
+      "github": "https://github.com/saadzeb/ak-poultry",
+      "img": "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803105/ak1_jjjpum.png",
+      "technologies": ["React", "Tailwind CSS"],
+      "images": [
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803105/ak1_jjjpum.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803099/ak2_jwos2e.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803100/ak3_d9bnt3.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803105/ak4_umxg9v.png",
+        "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803108/ak5_nfwqax.png"
+      ]
+    },
+    {
+      "title": "Card Preview Component",
+      "description": "A clean and responsive UI card component built as part of a Frontend Mentor challenge using HTML and CSS. Focused on layout precision and modern design practices.",
+      "year": "2023",
+      "role": "HTML & CSS Developer",
+      "path": "https://card-preview-nu.vercel.app/",
+      "github": "https://github.com/saadzeb/cara-ecommerce",
+      "img": "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803644/card_prev_dpcysk.png",
+      "technologies": ["HTML", "CSS"]
+    },
+    {
+      "title": "Fylo Landing Page",
+      "description": "A responsive landing page built from a Frontend Mentor design challenge using HTML and CSS. Emphasizes clean layout, typography, and responsive design.",
+      "year": "2023",
+      "role": "HTML & CSS Developer",
+      "path": "https://product-preview-card-component-main-cyan-phi.vercel.app/",
+      "github": "https://github.com/saadzeb/cara-ecommerce",
+      "img": "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803645/fylo_fprsv4.png",
+      "technologies": ["HTML", "CSS"]
+    },
+    {
+      "title": "Status Card Preview",
+      "description": "A minimal and responsive status card component created from a Frontend Mentor challenge using pure HTML and CSS.",
+      "year": "2023",
+      "role": "HTML & CSS Developer",
+      "path": "https://tats-preview-card-component-main.vercel.app/",
+      "github": "https://github.com/saadzeb/cara-ecommerce",
+      "img": "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803648/status_bnisxc.png",
+      "technologies": ["HTML", "CSS"]
+    },
+    {
+      "title": "Product Preview Card",
+      "description": "A responsive product card UI built as part of a Frontend Mentor challenge using HTML and CSS, focusing on layout structure and visual hierarchy.",
+      "year": "2023",
+      "role": "HTML & CSS Developer",
+      "path": "https://product-preview-card-component-main-gamma-five.vercel.app/",
+      "github": "https://github.com/saadzeb/cara-ecommerce",
+      "img": "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1769803647/product_prev_bpdatd.png",
+      "technologies": ["HTML", "CSS"]
+    }
+  ]
+}

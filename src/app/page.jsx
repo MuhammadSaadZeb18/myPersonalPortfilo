@@ -4,7 +4,6 @@ import FadeSection from "../app/components/common/FadeSection";
 
 import About from "./components/about/About";
 import Education from "./components/education/Education";
-import Footer from "./components/footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/projects/Projects";
 import Services from "./components/services/Services";

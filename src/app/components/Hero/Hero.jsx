@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import aut from "../../assets/aut2.jpg";
+import aut from "../../assets/aut_about.jpg";
+import aut2 from "../../assets/aut2.jpg";
 import { HiArrowDownOnSquare } from "react-icons/hi2";
 import Button from "../ui/Button";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
@@ -34,12 +35,26 @@ const Hero = () => {
             </Button>
           </a>
 
-          <div className="rounded-full cursor-pointer flex items-center justify-center bg-zinc-800 h-16 w-16">
-            <BsGithub size={20} className="text-yellow-200" />
-          </div>
 
-          <div className="rounded-full cursor-pointer flex items-center justify-center bg-zinc-800 h-16 w-16">
-            <BsLinkedin size={20} className="text-yellow-200" />
+          <div className="flex flex-col gap-4">
+            <div className="flex gap-5">
+              <a
+                href="https://github.com/MuhammadSaadZeb18"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsGithub
+                  className="text-yellow-200 hover:scale-110 transition-all"
+                  size={30}
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/muhammad-saad-zeb-951329381/" target="_blank" rel="noreferrer">
+                <BsLinkedin
+                  className="text-yellow-200  hover:scale-110 transition-all"
+                  size={30}
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -64,7 +79,7 @@ const Hero = () => {
           }}
         >
           <Image
-            src={aut}
+            src={aut2}
             alt="myImghere"
             className="rounded-xl sm:h-[500px] w-full object-contain sm:w-auto"
             priority

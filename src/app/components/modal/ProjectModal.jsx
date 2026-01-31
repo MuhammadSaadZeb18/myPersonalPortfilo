@@ -1,15 +1,17 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+
+import React from "react";
 import Image from "next/image";
 import { HiXMark } from "react-icons/hi2";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 
 const ModalSlider = ({ images }) => {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = React.useState(0);
   const length = images.length;
-  const intervalRef = useRef(null);
+  const intervalRef = React.useRef(null);
 
-  useEffect(() => {
+  React.useEffect(() => {
     startAutoSlide();
     return () => stopAutoSlide();
   }, []);
@@ -18,7 +20,7 @@ const ModalSlider = ({ images }) => {
     stopAutoSlide();
     intervalRef.current = setInterval(() => {
       setCurrent((prev) => (prev + 1) % length);
-    }, 1500);
+    }, 2000);
   };
 
   const stopAutoSlide = () => {
@@ -29,21 +31,22 @@ const ModalSlider = ({ images }) => {
     <div
       className="relative w-full overflow-hidden rounded-xl group"
       onMouseEnter={startAutoSlide}
-      // onMouseLeave={startAutoSlide}
     >
-      <h6>SecreenShots of Project</h6>
+      <h6 className="mb-4 font-semibold text-lg text-yellow-200">
+        Screenshots
+      </h6>
 
       <div
         className="flex transition-transform duration-700"
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {images.map((img, index) => (
-          <div key={index} className="min-w-full h-[400px] relative">
+          <div key={index} className="min-w-full h-[350px] relative">
             <Image
               src={img}
               alt="project image"
               fill
-              className="object-contain h-full w-full"
+              className="object-contain h-full w-full rounded-lg"
             />
           </div>
         ))}
@@ -53,93 +56,127 @@ const ModalSlider = ({ images }) => {
 };
 
 const ProjectModal = ({ project, onClose }) => {
-  if (!project) return null;
-
   return (
-    <div
-      className="fixed cursor-pointer inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-[999] p-4"
-      onClick={onClose}
-    >
-      <div
-        className="bg-zinc-900 rounded-2Md w-[90%] max-h-[90vh] overflow-y-auto hide-scrollbar relative"
-        onClick={(e) => e.stopPropagation()}
-      >
-        {/* ⭐ STICKY HEADER ⭐ */}
-        <div className="sticky top-0 z-20 bg-zinc-900 p-6 border-b border-zinc-700 flex justify-between items-center">
-          <h4 className="text-[2rem] sm:text-[3rem]">{project.title}</h4>
-
-          <button
+    <AnimatePresence>
+      {project && (
+        <motion.div
+          className="fixed inset-0 z-[999] flex items-center justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          {/* Backdrop */}
+          <motion.div
+            className="absolute inset-0 bg-black/70 backdrop-blur-sm"
             onClick={onClose}
-            className="cursor-pointer text-white hover:text-red-400 transition"
+          />
+
+          {/* Modal Card */}
+          <motion.div
+            className="relative z-10 bg-zinc-900 w-[90%] max-w-[1200px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-xl hide-scrollbar"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1, transition: { duration: 0.4 } }}
+            exit={{ scale: 0.8, opacity: 0, transition: { duration: 0.3 } }}
           >
-            <HiXMark size={28} />
-          </button>
-        </div>
+            {/* HEADER */}
+            <div className="sticky top-0 z-20 bg-zinc-900 border-b border-zinc-700 p-6 flex justify-between items-center">
+              <motion.h4
+                className="text-3xl sm:text-4xl font-bold"
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1, transition: { delay: 0.1 } }}
+              >
+                {project.title}
+              </motion.h4>
 
-        {/* BODY CONTENT */}
-        <div className="p-6">
-          {/* Description */}
-          <p className="mb-6">{project.description}</p>
-
-          {/* Slider */}
-          <div className="mb-6">
-            <ModalSlider images={project.images} />
-          </div>
-
-          {/* Info */}
-          <div className="grid my-[4rem] grid-cols-2 gap-6">
-            <div>
-              <h6 className="text-stone-300">YEAR</h6>
-              <p>{project.year}</p>
+              <motion.button
+                onClick={onClose}
+                className="cursor-pointer text-white hover:text-red-400 transition"
+                whileHover={{ scale: 1.2 }}
+              >
+                <HiXMark size={28} />
+              </motion.button>
             </div>
 
-            <div>
-              <h6 className="text-stone-300">ROLE</h6>
-              <p>{project.role}</p>
-            </div>
-          </div>
+            {/* BODY */}
+            <motion.div
+              className="p-6 flex flex-col md:flex-row gap-8"
+              initial="hidden"
+              animate="show"
+              variants={{
+                hidden: {},
+                show: { transition: { staggerChildren: 0.15 } },
+              }}
+            >
+              {/* LEFT: IMAGE / SLIDER */}
+              <motion.div
+                className="md:w-1/2 flex flex-col gap-6"
+                variants={{
+                  hidden: { x: -50, opacity: 0 },
+                  show: { x: 0, opacity: 1, transition: { duration: 0.5 } },
+                }}
+              >
+                <p className="text-stone-400">{project.description}</p>
+                <ModalSlider images={project.images} />
+              </motion.div>
 
-          {/* Technologies */}
-          <div className="mb-6">
-            <h5 className="mb-2 text-stone-300">TECHNOLOGIES</h5>
-            <div className="flex flex-wrap gap-3">
-              {project.technologies.map((tech, i) => (
-                <li
-                  key={i}
-                  className="cursor-pointer list-none group relative w-fit"
-                >
-                  <div className="py-2 px-6 w-fit relative">
-                    <p className="text-white">{tech}</p>
-
-                    <span className="absolute left-0 top-0 h-px w-full bg-white group-hover:bg-yellow-200 transition-colors duration-300"></span>
-                    <span className="absolute left-0 bottom-0 h-px w-full bg-white group-hover:bg-yellow-200 transition-colors duration-300"></span>
-                    <span className="absolute left-0 top-0 w-px h-0 bg-white group-hover:h-full group-hover:bg-yellow-200 transition-all duration-300"></span>
-                    <span className="absolute right-0 bottom-0 w-px h-0 bg-white group-hover:h-full group-hover:bg-yellow-200 transition-all duration-300"></span>
+              {/* RIGHT: INFO */}
+              <motion.div
+                className="md:w-1/2 flex flex-col gap-6"
+                variants={{
+                  hidden: { x: 50, opacity: 0 },
+                  show: { x: 0, opacity: 1, transition: { duration: 0.5 } },
+                }}
+              >
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <h6 className="text-stone-300 font-semibold">Year</h6>
+                    <p>{project.year}</p>
                   </div>
-                </li>
-              ))}
-            </div>
-          </div>
+                  <div>
+                    <h6 className="text-stone-300 font-semibold">Role</h6>
+                    <p>{project.role}</p>
+                  </div>
+                </div>
 
-          {/* Buttons */}
-          <div className="flex gap-4">
-            <Link
-              href={project.path}
-              className="px-6 py-2 rounded-2Sm bg-yellow-200 font-semibold"
-            >
-              <p className="text-black">Live Demo</p>
-            </Link>
+                <div>
+                  <h5 className="mb-2 text-stone-300 font-semibold">
+                    Technologies
+                  </h5>
+                  <div className="flex flex-wrap gap-3">
+                    {project.technologies.map((tech, i) => (
+                      <motion.li
+                        key={i}
+                        className="list-none py-2 px-4 rounded-md bg-zinc-800 cursor-pointer hover:bg-yellow-200 hover:text-black transition-all"
+                        whileHover={{ scale: 1.1 }}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{
+                          opacity: 1,
+                          y: 0,
+                          transition: { delay: i * 0.05 },
+                        }}
+                      >
+                        {tech}
+                      </motion.li>
+                    ))}
+                  </div>
+                </div>
 
-            {/* <Link
-              href={project.github}
-              className="px-6 py-2 rounded-2Sm bg-yellow-200 text-black font-semibold"
-            >
-              <p className="text-black">Github</p>
-            </Link> */}
-          </div>
-        </div>
-      </div>
-    </div>
+                {/* BUTTONS */}
+                <div className="flex gap-4 mt-4">
+                  <Link
+                    href={project.path}
+                    target="_blank"
+                    className="px-6 py-2 rounded-2Sm  border-2 border-yellow-200 font-semibold"
+                  >
+                    Live Demo
+                  </Link>
+                </div>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 

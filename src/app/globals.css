@@ -61,6 +61,7 @@ body {
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-md1: 800px;
+  --breakpoint-mdM: 850px;
   --breakpoint-md2: 950px;
   --breakpoint-lg: 1100px;
   --breakpoint-lg2: 1200px;
@@ -105,6 +106,9 @@ body {
   }
   .gradient {
     @apply text-transparent bg-gradient-to-r from-yellow-200 via-white to-yellow-200 bg-clip-text;
+  }
+  .border_New {
+    @apply border  border-white/10;
   }
 }
 
