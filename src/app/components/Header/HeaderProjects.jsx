@@ -9,7 +9,7 @@ const HeaderProjects = () => {
       <div className="container h-28 flex items-center justify-between">
         {/* Logo */}
         <Link href={"/"}>
-          <h4 className="font-bold text-2xl md:text-3xl">M SAAD ZEB</h4>
+          <h4 className="font-bold text-2xl md:text-3xl gradient">{"< SaadZeb />"}</h4>
         </Link>
       </div>
     </header>

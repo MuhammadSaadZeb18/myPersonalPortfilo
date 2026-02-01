@@ -32,7 +32,7 @@ const Education = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.2, duration: 0.6 }}
             whileHover={{ scale: 1.05 }}
-            className="bg-zinc-800 border border-white/10 rounded-2xl p-6 flex flex-col items-center gap-4 shadow-lg cursor-pointer"
+            className=" border border-white/10 rounded-2xl p-6 flex flex-col items-center gap-4 shadow-lg cursor-pointer"
           >
             <div className="text-5xl text-yellow-200">{edu.icon}</div>
             <h5 className=" text-center">{edu.degree}</h5>
