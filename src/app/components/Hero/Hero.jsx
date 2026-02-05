@@ -22,7 +22,7 @@ const Hero = () => {
         </p>
 
         <div className="flex gap-4 items-center">
-          <a href="/res.pdf" download>
+          <a href="/Saad_Resume.pdf" download>
             <Button
               icon={
                 <HiArrowDownOnSquare
@@ -34,7 +34,6 @@ const Hero = () => {
               Download Resume
             </Button>
           </a>
-
 
           <div className="flex flex-col gap-4">
             <div className="flex gap-5">
@@ -48,7 +47,11 @@ const Hero = () => {
                   size={30}
                 />
               </a>
-              <a href="https://www.linkedin.com/in/muhammad-saad-zeb-951329381/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.linkedin.com/in/muhammad-saad-zeb-951329381/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <BsLinkedin
                   className="text-yellow-200  hover:scale-110 transition-all"
                   size={30}
