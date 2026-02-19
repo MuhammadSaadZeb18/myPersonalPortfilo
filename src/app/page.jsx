@@ -4,6 +4,7 @@ import FadeSection from "../app/components/common/FadeSection";
 
 import About from "./components/about/About";
 import Education from "./components/education/Education";
+import Experience from "./components/experience/Experience";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/projects/Projects";
 import Services from "./components/services/Services";
@@ -28,6 +29,10 @@ export default function Home() {
       </FadeSection>
       <div className="w-full h-px my-20! bg-zinc-800" />
 
+      <FadeSection>
+        <Experience />
+      </FadeSection>
+      <div className="w-full h-px my-20! bg-zinc-800" />
       <FadeSection>
         <Services />
       </FadeSection>

@@ -16,9 +16,12 @@ const Hero = () => {
         <h1 className="gradient">Hi, I am Muhammad Saad Zeb.</h1>
 
         <p>
-          I’m a Front-End Developer focused on building modern, responsive web
-          apps using React and Next.js. I enjoy turning designs into clean,
-          user-friendly interfaces and writing maintainable code.
+          Frontend Developer with 3+ year of experience building
+          production-ready web applications using React.js, Next.js, and
+          Tailwind CSS. Strong in converting Figma designs into scalable UI,
+          integrating REST APIs, and optimizing performance. Experienced working
+          with remote teams and delivering maintainable, real-world
+          applications.
         </p>
 
         <div className="flex gap-4 items-center">
