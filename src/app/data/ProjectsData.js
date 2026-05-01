@@ -110,6 +110,7 @@ export const projectsData = [
     github: "https://github.com/saadzeb/nestmart",
     img: nest,
     technologies: ["React", "Tailwind CSS", "Context API"],
+<<<<<<< HEAD
     images: [
       img1,
       img2,
@@ -123,6 +124,9 @@ export const projectsData = [
       img10,
       img11,
     ],
+=======
+    images: [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11],
+>>>>>>> d35a162346743414254c59683dbf5750fe421562
   },
 
   {
