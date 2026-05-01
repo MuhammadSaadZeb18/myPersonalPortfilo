@@ -69,7 +69,7 @@ body {
   --breakpoint-xl: 1280px;
   --breakpoint-2xl: 1536px;
 }
-
+/* ........ */
 @layer base {
   h1,
   h2,
