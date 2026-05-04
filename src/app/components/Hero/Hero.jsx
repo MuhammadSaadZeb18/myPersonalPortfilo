@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import aut from "../../assets/aut_about.jpg";
-import aut2 from "../../assets/aut2.jpg";
+import aut2 from "../../assets/author.png";
 import { HiArrowDownOnSquare } from "react-icons/hi2";
 import Button from "../ui/Button";
 import { BsGithub, BsLinkedin } from "react-icons/bs";

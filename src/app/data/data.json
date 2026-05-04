@@ -1,5 +1,34 @@
 {
   "projectsData": [
+
+
+  {
+    "title": "SwiftRoc - Portfilo Website",
+    "description":
+      "A modern, fully responsive e-commerce web application built with React.js and Tailwind CSS. Features include product search, category filtering, a cart system, and a clean, user-friendly interface designed from scratch.",
+    "year": "2026",
+    "role": "Front-end Developer",
+    "path": "https://stage.swiftroc.com/",
+    "github": "https://github.com/saadzeb",
+    "img": "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1777873651/s1_iskgs7.png",
+    "technologies": ["Nextjs", "Tailwind CSS", "Zustand"],
+    "images": [
+      "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1777873651/s1_iskgs7.png",
+      "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1777873695/s2_hbo3bf.png",
+      "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1777873698/s3_auspfa.png",
+      "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1777873699/s4_uxsxt1.png",
+      "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1777873700/s5_higd2e.png",
+      "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1777873700/s6_pdubqt.png",
+      "https://res.cloudinary.com/dbtjgjqhl/image/upload/v1777873701/s7_w3mceo.png"
+     
+    ]
+   
+  },
+
+
+
+
+
     {
       "title": "NestMart — E-Commerce Platform",
       "description": "A modern, fully responsive e-commerce web application built with React.js and Tailwind CSS. Features include product search, category filtering, a cart system, and a clean, user-friendly interface designed from scratch.",

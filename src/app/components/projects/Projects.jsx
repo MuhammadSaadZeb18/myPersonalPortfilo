@@ -15,12 +15,18 @@ const Projects = () => {
     const fetchProjects = async () => {
       try {
         const res = await fetch(
-          "https://portfilo-a7ebc-default-rtdb.firebaseio.com/projectsData.json"
+          "https://portfilo-a7ebc-default-rtdb.firebaseio.com/projectsData.json",
         );
         const data = await res.json();
-        setProjects(data || []);
+
+        // The data is directly an array of projects
+        const projectsArray = Array.isArray(data) ? data : [];
+
+        console.log("Loaded projects:", projectsArray.length);
+        setProjects(projectsArray);
       } catch (err) {
         console.error("Firebase error:", err);
+        setProjects([]);
       } finally {
         setLoading(false);
       }
@@ -29,7 +35,9 @@ const Projects = () => {
     fetchProjects();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p className="text-center py-10">Loading projects...</p>;
+  if (!projects.length)
+    return <p className="text-center py-10">No projects found.</p>;
 
   return (
     <motion.div
@@ -49,17 +57,14 @@ const Projects = () => {
         front-end development.
       </motion.p>
 
-      {projects.map(
-        (p, i) =>
-          i < 3 && (
-            <ProjectBox
-              key={p.title}
-              index={i}
-              {...p}
-              onClick={() => setSelectedProject(p)}
-            />
-          )
-      )}
+      {projects.slice(0, 3).map((p, i) => (
+        <ProjectBox
+          key={p.title || i}
+          index={i}
+          {...p}
+          onClick={() => setSelectedProject(p)}
+        />
+      ))}
 
       <ProjectModal
         project={selectedProject}

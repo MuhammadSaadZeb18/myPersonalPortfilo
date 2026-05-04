@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Button from "../ui/Button";
 import { HiArrowDownOnSquare } from "react-icons/hi2";
-import aut from "../../assets/aut_about.jpg";
+import aut from "../../assets/aut.png";
 import Image from "next/image";
 
 const content = [
