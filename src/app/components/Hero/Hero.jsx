@@ -15,15 +15,17 @@ const Hero = () => {
         <h1 className="gradient">Hi, I am Muhammad Saad Zeb.</h1>
 
         <p>
-          Frontend Engineer with 2-3 years of experience building responsive,
-          high-performance web applications using React.js and modern JavaScript
-          frameworks. Skilled at translating design concepts into maintainable,
-          user-friendly interfaces. Experienced in remote collaboration, API
-          integration, and delivering clean, production-ready code.
+          Frontend Developer with 2+ years of experience building responsive,
+          high-performance websites and web applications using React.js, Next.js,
+          and TypeScript. Skilled in developing cross-platform mobile
+          applications with React Native and Expo, integrating REST APIs, and
+          creating reusable UI components. Proficient in using AI-assisted
+          development tools to accelerate implementation, debugging, and
+          refactoring while maintaining code quality.
         </p>
 
         <div className="flex gap-4 items-center">
-          <a href="/Saad_Resume.pdf" download>
+          <a href="/msaadzeb_FrontE_cv.pdf" download>
             <Button
               icon={
                 <HiArrowDownOnSquare
