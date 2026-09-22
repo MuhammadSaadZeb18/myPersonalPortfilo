@@ -18,16 +18,17 @@ export default function Home() {
         <Hero />
       </FadeSection>
       <div className="w-full h-px my-20! bg-zinc-800" />
+      <FadeSection>
+        <Projects />
+      </FadeSection>
+      <div className="w-full h-px my-20! bg-zinc-800" />
 
       <FadeSection>
         <Skills />
       </FadeSection>
       <div className="w-full h-px my-20! bg-zinc-800" />
 
-      <FadeSection>
-        <Projects />
-      </FadeSection>
-      <div className="w-full h-px my-20! bg-zinc-800" />
+
 
       <FadeSection>
         <Experience />

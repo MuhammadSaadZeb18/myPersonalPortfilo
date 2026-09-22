@@ -1,41 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ProjectBox from "./ProjectBox";
 import ProjectModal from "../modal/ProjectModal";
 import { motion } from "framer-motion";
 import { fadeUp, stagger } from "@/lib/motion";
+import data from "../../data/data.json";
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
   const [selectedProject, setSelectedProject] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const projects = data.projectsData || [];
 
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const res = await fetch(
-          "https://portfilo-a7ebc-default-rtdb.firebaseio.com/projectsData.json",
-        );
-        const data = await res.json();
-
-        // The data is directly an array of projects
-        const projectsArray = Array.isArray(data) ? data : [];
-
-        console.log("Loaded projects:", projectsArray.length);
-        setProjects(projectsArray);
-      } catch (err) {
-        console.error("Firebase error:", err);
-        setProjects([]);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProjects();
-  }, []);
-
-  if (loading) return <p className="text-center py-10">Loading projects...</p>;
   if (!projects.length)
     return <p className="text-center py-10">No projects found.</p>;
 
@@ -75,3 +50,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
